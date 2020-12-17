@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <style>
+        body {
+          background-image: url('login_image/bg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+    </style>
+
+    <div class="container"> 
+        <label><b>Username</b></label> 
+    </br>
+        <input type="text" placeholder="Enter Username" name="uname" id="text1" required> 
+    </br>
+    </br>
+    </br>
+        <label><b>Password</b></label> 
+    </br>
+        <input type="password" placeholder="Enter Password" name="psw" id="text2" required> 
+    </br>
+    </br>
+    </br>
+    </br>
+        <button type="submit" onclick="javascript:validate()">Login</button> 
+        <div class="checkbox">          
+            <input type="checkbox" checked="checked">Remember me 
+        </div> 
+    </div> 
+
+
+        <script src="login.js"></script>
+</body>
+</html>
+
+

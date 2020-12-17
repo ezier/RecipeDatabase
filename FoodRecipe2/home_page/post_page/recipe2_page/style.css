@@ -1,0 +1,439 @@
+
+/* Common Styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Vollkorn", serif;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #2b81e4;
+  --secondary-color: #eee;
+  --white-color: #fff;
+  --grey-color: #555;
+  --light-grey-color: #777;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* End of Common styles */
+
+
+
+/* Navbar */
+.open-navbar-icon {
+  position: fixed;
+  top: 6.5rem;
+  left: 6.5rem;
+  z-index: 200;
+}
+
+.back {
+  border: none;
+  color: rgb(167, 247, 18);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3rem;
+}
+
+.back .fas{
+  font-size: 3rem;
+  color: antiquewhite;
+}
+/* End of Navbar */
+
+/* Header */
+.header {
+  width: 100%;
+  height: calc(100vh - 7rem);
+  background: linear-gradient(rgba(6, 212, 6, 0.5), rgb(233, 236, 10)),
+    url(images/header-bg.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  perspective: 100rem;
+}
+
+.header-text {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0.3rem 0.5rem var(--grey-color);
+}
+
+.heading {
+  font-size: 8rem;
+  color: var(--white-color);
+}
+
+.header-paragraph {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  max-width: 70rem;
+  margin: auto;
+}
+/* End of Header */
+
+
+
+/* Popular tours */
+.popular-tours {
+  padding: 5rem 0 10rem 0;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.3)
+  ),
+  url(images/bg.jpg) center no-repeat;
+background-size: cover;
+flex-direction: column;  
+}
+
+.popular-tours-heading {
+  font-size: 8rem;
+  text-align: center;
+  margin-bottom: 8rem;
+  color: rgb(145, 238, 39);
+  text-shadow: 0.3rem 0.3rem 0.3rem #777;
+}
+
+.cards-wrapper {
+  display: flex;
+  margin: 5rem;
+  justify-content: left;
+}
+
+.card {
+  width: 35rem;
+  position: relative;
+  perspective: 150rem;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.front-side {
+  text-align: center;
+  background-color: var(--white-color);
+  border-radius: 0.3rem;
+  position: relative;
+  z-index: 10;
+  opacity: 0.9;
+  transition: opacity 0.4s, transform 0.4s, box-shadow 0.4s;
+}
+
+.change > .front-side {
+  transform: translateZ(-5rem) translateX(3rem);
+  box-shadow: 0 2rem 4rem #777;
+  opacity: 0.5;
+  z-index: 0;
+}
+.change2 > .front-side {
+  transform: translateZ(-5rem) translateX(3rem);
+  box-shadow: 0 2rem 4rem #777;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.card-list {
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0 3rem 0;
+}
+
+.card-list-item {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--grey-color);
+  margin: 2rem 0;
+  border-bottom: 0.2rem solid green;
+  padding-bottom: 1.5rem;
+}
+
+.back-side {
+  position: absolute;
+  top: 0;
+  background-color: rgba(124, 231, 114, 0.493);
+  width: 400%;
+  height: 100%;
+  border-radius: 0.3rem;
+  left: 36rem;
+  box-shadow: 0 2rem 4rem #777;
+  flex-direction: column;
+  transform: translateZ(-1500rem) translateX(3rem);
+  opacity: 0;
+  transition: opacity 0.4s, transform 0.4s, box-shadow 0.4s;
+}
+
+.change > .back-side {
+  transform: translateZ(0) translateX(0);
+  box-shadow: 0 0.5rem 2rem #aaa;
+  opacity: 0.9;
+}
+
+.back-side .discription .head{
+  font-size: 5rem;
+  font-weight: 300;
+  color: rgb(247, 12, 102);
+  text-shadow: 2px 2px #fff;
+  margin-bottom: 1rem;
+  margin-left: 50rem;
+  margin-right: 20rem;
+  margin-top: -6rem;
+  font-family: 'East Sea Dokdo', cursive;
+  text-align: right;
+  
+}
+
+.back-side .discription .detail{
+  font-size: 2.3rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 2.5rem;
+  margin-left: 20rem;
+  margin-right: 30rem;
+  margin-top: -2rem;
+  text-align: right;
+}
+.card-list .fas{
+  color: rgb(224, 195, 28);
+}
+.card-list .far{
+  color: rgb(224, 195, 28);
+}
+
+.card-button {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border: none;
+  font-size: 2.5rem;
+  padding: 1rem 2rem;
+  letter-spacing: 0.2rem;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.navigation-button {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--light-grey-color);
+  border-radius: 0.3rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.navigation-button-2 {
+  position: absolute;
+  top: 23.6rem;
+  left: 0.5rem;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--light-grey-color);
+  border-radius: 0.3rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.back-side-2 {
+  position: absolute;
+  top: 0;
+  background-color: rgba(124, 231, 114, 0.493);
+  width: 400%;
+  height: 100%;
+  border-radius: 0.3rem;
+  left: 36rem;
+  box-shadow: 0 2rem 4rem #777;
+  flex-direction: column;
+  transform: translateZ(-1500rem) translateX(3rem);
+  opacity: 0;
+  transition: opacity 0.4s, transform 0.4s, box-shadow 0.4s;
+}
+
+.change2 > .back-side-2 {
+  transform: translateZ(0) translateX(0);
+  box-shadow: 0 0.5rem 2rem #aaa;
+  opacity: 0.9;
+}
+
+.back-side-2 .discription .head{
+  font-size: 5rem;
+  font-weight: 300;
+  color: rgb(247, 12, 102);
+  text-shadow: 2px 2px #fff;
+  margin-bottom: 4rem;
+  margin-left: 50rem;
+  margin-right: 20rem;
+  margin-top: -8rem;
+  font-family: 'East Sea Dokdo', cursive;
+  text-align: right;
+  
+}
+
+.back-side-2 .discription .detail{
+  font-size: 2.3rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 6.5rem;
+  margin-left: 20rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  text-align: right;
+}
+
+
+/* End of Popular tours */
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin: 3rem 0;
+  }
+
+  .story-bg {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    flex-grow: 1;
+  }
+
+  .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+
+  .heading {
+    font-size: 6rem;
+  }
+
+  .header-paragraph {
+    font-size: 2.5rem;
+  }
+
+  .popular-tours-heading {
+    font-size: 6rem;
+  }
+
+  .story-bg {
+    transform: skewX(0);
+  }
+
+  .story {
+    transform: skewX(0);
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .story-image {
+    margin-bottom: 3rem;
+  }
+
+  .footer-link {
+    padding: 0.3rem 2rem;
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .header-paragraph {
+    display: none;
+  }
+
+  .popular-tours-heading {
+    font-size: 5rem;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+
+  .footer-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-link {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    margin: 0;
+  }
+
+  .open-navbar-icon {
+    top: 2.5rem;
+    left: 2.5rem;
+  }
+
+  .navbar-wrapper {
+    padding: 0;
+  }
+
+  .close-navbar-icon {
+    right: 4rem;
+  }
+
+  .header {
+    height: 100vh;
+  }
+
+  .contact-heading {
+    font-size: 6rem;
+  }
+
+  .contact-form {
+    padding: 2rem;
+    height: 40rem;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 45%;
+  }
+}

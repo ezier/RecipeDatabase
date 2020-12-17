@@ -1,0 +1,125 @@
+
+/* Common Styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Vollkorn", serif;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  
+}
+
+html {
+  font-size: 130%;
+}
+
+
+.bg {
+  padding: 3rem 0 5rem 0;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.3)
+  ),
+  url(images/bg.jpg) center no-repeat;
+background-size: cover;
+flex-direction: column;  
+}
+
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* End of Common styles */
+
+
+
+.headline {
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0.3rem 0.5rem var(--grey-color);
+  margin: 0.5rem  0.5rem  0.5rem  0.5rem;
+}
+
+.input {
+  text-align: left;
+  font-size: 0rem;
+  font-weight: 200;
+  color: var(--secondary-color);
+  max-width: 70rem;
+  margin:  0.5rem  0.5rem  0.5rem  0.5rem;
+}
+
+.checkbox {
+  text-align: left;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+  max-width: 70rem;
+  margin:  1rem  1rem  1rem  1rem;
+}
+
+span {
+  width: 0.2rem;
+  height: 0.2rem;
+  padding: 0.2rem;
+  display: inline-block;
+}
+
+span2 {
+  width: 0rem;
+  height: 0rem;
+  padding: 0.7rem;
+  display: inline-block;
+}
+
+
+span3 {
+  width: 0rem;
+  height: 0rem;
+  padding: 0.7rem;
+  display: inline-block;
+}
+
+span4 {
+  width: 0rem;
+  height: 0rem;
+  padding: 0.25rem;
+  display: inline-block;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  color:orangered;
+  text-shadow: 0 0.3rem 0.5rem grey;
+}
+
+
+.card-button {
+  color: rgb(6, 67, 82);
+  background-color: var(--white-color);
+  border-color: rgb(97, 194, 17);
+  box-shadow: 0.2rem 0.2rem 0.2rem #777; 
+  border-bottom-left-radius: 0.1rem;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  letter-spacing: 0.1rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  align-items: center;
+}
+
+
+.whole {
+  padding: 5rem;
+  align-items: center;
+}
